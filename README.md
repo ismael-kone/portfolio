@@ -26,3 +26,11 @@ yarn add @popperjs/core
 For Icon Visibility:
 
 yarn add @fortawesome/fontawesome-free
+
+USER STORY 
+
+https://ibb.co/vjx8VCt
+
+WIREFRAME :
+
+https://ibb.co/phdDkjB
