@@ -1,0 +1,26 @@
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.card-subtitle {
+  color: var(--clr-dark);
+  font-weight: var(--fw-bold);
+  display: flex;
+  justify-content: center;
+}
+.title {
+  color: var(--clr-dark);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: block;
+  }
+}

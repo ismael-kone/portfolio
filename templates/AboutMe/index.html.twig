@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} About me {% endblock %}
+
+{% block body %}
+
+    <section class="about-me" id="about">
+    <h2 class="title">Who I am</h2>
+    <p class="card-subtitle">Web Developer FullStack based out of London/Paris</p>
+
+    <div class="about-me__body">
+        <p><strong>{{ content[0].name }}</strong></p>
+        <p>{{ content[0].description }}</p>
+        <p>{{ content[0].description }}</p>
+    </div>
+
+    </section>
+
+{% endblock %}

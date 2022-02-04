@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="card-body">
+    <div class="text-center mt-5">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+    </div>
+    <button class="mt-5" type="submit">Add category</button>
+    {{ form_end(form) }}
+    </section>
+{% endblock %}

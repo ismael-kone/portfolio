@@ -1,15 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Home {% endblock %}
+{% block title %} Portfolio {% endblock %}
 
 {% block body %}
 
-<body>
 
-<h1>{{ website }}</h1>
 
-</body>
+<section class="my-work" id="work">
+<h2 class="portfolio-title">My Work</h2>
+<p class="portfolio-subtitle">A selection of my range of work</p>
 
-</html>
+<div class="portfolio">
+
+    <!--- Portfolio item 01 --->
+    <a href="#" class="portfolio_item">
+        <img src="{{ asset('build/images/Screenshot14.jpg') }}" alt="" class="portfolio_img">
+    </a>
+
+    <!--- Portfolio item 02 --->
+    <a href="#" class="portfolio_item">
+        <img src="{{ asset('build/images/Screenshot28.jpg') }}" alt="" class="portfolio_img">
+    </a>
+
+    <!--- Portfolio item 03 --->
+    <a href="#" class="portfolio_item">
+        <img src="{{ asset('build/images/Screenshot57.jpg') }}" alt="" class="portfolio_img">
+    </a>
+
+    <!--- Portfolio item 04 --->
+    <a href="#" class="portfolio_item">
+        <img src="{{ asset('build/images/Screenshot04.jpg') }}" alt="" class="portfolio_img">
+    </a>
+</div>
+</section>
+
 
 {% endblock %}

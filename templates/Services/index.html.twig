@@ -1,17 +1,30 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Home {% endblock %}
+{% block title %} My Services {% endblock %}
 
 {% block body %}
 
-    <body>
 
-    <h1>ihviugiuviu</h1>
+<section class="my-services" id="services">
+    <h2 class="card-title"> What I do </h2>
+        <div class="services">
+            <div class="service">
+                <h3><strong>{{ html[0].name }}</strong></h3>
+                <p>{{ html[0].description }}</p>
+            </div>
 
-    </body>
+            <div class="service">
+                <h3><strong>{{ back[0].name }}</strong></h3>
+                <p>{{ html[0].description }}</p>
+            </div>
 
-    </html>
+
+            <div class="service">
+                <h3><strong>{{ html[0].name }}</strong></h3>
+                <p>{{ html[0].description }}</p>
+            </div>
+        </div>
+    <a href="/portfolio" class="btn">My Work</a>
+</section>
 
 {% endblock %}
-
-

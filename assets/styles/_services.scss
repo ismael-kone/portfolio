@@ -1,0 +1,65 @@
+.my-services{
+  background-color: var(--clr-dark);
+  background-size: cover;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.card-title {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5em 1.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transfrom 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+
+.card-title::after {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.5;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .service + .service {
+    margin-left: 2em;
+  }
+
+}
+
+

@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\ContentRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,10 +17,15 @@ class ServicesController extends AbstractController
      * @return Response
      * @Route ("/", name="index")
      */
-    public function index(): Response
+    public function index(ContentRepository $contentRepository): Response
     {
+
+        $html = $contentRepository->findBy(['name' => 'Front-End']);
+        $back = $contentRepository->findBy(['name' => 'Back-End']);
+
         return $this->render('Services/index.html.twig', [
-            'website' => 'Portfolio',
+            'html' => $html,
+            'back' => $back,
         ]);
     }
 }

@@ -4,12 +4,16 @@
 
 {% block body %}
 
-    <body>
 
-    <h1>{{ website }}</h1>
 
-    </body>
+<section class="intro" id="home">
+    <h1 class="card-title--intro">
+        Hi, I am <strong> {{ content[0].name }} </strong>
+    </h1>
+    <p class="card-subtitle-plus">FullStack Developer</p>
+    <img src="{{ asset('build/images/IMG_8637.PNG') }}" alt="picture of me" class="intro__img">
+</section>
 
-    </html>
+
 
 {% endblock %}

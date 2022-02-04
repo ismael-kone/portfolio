@@ -1,6 +1,68 @@
 @import "~bootstrap/scss/bootstrap";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "_navbar.css";
+@import 'variables.scss';
+@import "services";
+@import "home";
+@import "portfolio";
+@import "about";
+@import "footer";
 
 body {
-    background-color: white;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
+
+section {
+  padding: 5rem 2rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1{
+    font-size: var(--fs-h1);
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+}
+
+.card-title {
+    font-weight: var(--fw-reg);
+}
+.card-subtitle-plus {
+    margin: 0;
+    font-size: var(--fs-h3);
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+.card-subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+
 

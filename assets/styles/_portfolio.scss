@@ -1,0 +1,43 @@
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.portfolio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio-title {
+  font-weight: var(--fw-bold);
+}
+
+.portfolio-subtitle {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}
+
+.portfolio_item {
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
+.portfolio_img {
+  transition:
+          transform 750ms cubic-bezier(.5, 0 ,.5, 1),
+          opacity 250ms linear;
+}
+
+.portfolio_img:hover {
+  transform: scale(1.2);
+  opacity: .5;
+}
+
+.card-body{
+  padding: 3rem;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
